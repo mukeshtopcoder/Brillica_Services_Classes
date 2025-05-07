@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <div class="box2">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    *{
+        margin : 0;
+        padding: 0;
+    }
+    .box{
+        width: 100%;
+        height: 100vh;
+        background-color: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box1{
+        width: 500px;
+        height: 300px;
+        background : linear-gradient(45deg,red,green,blue,black,crimson,yellow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: animate 3s linear infinite;
+        background-size: 3000px;
+    }
+    .box2{
+        width: 490px;
+        height: 290px;
+        background-color: #333;
+        filter: blur(10px);
+    }
+    @keyframes animate {
+        0%{
+            background-size: 3000px; 
+        }50%{
+            background-size: 1500px; 
+        }100%,0%{
+            background-size: 600px; 
+        }
+    }
+</style>
